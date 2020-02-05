@@ -1,3 +1,6 @@
+---
+layout: default
+---
 <pre>
   __________________________
 / Yesterday I ate a clock.   \
