@@ -19,11 +19,14 @@
         <p>{{ site.description | default: site.github.project_tagline }}</p>
    
 	<ul>
-  	{% for post in site.posts %}
+	{% assign min = 0 %}
+	{% assign max = site.posts | size %}
+	{% assign diff = max | minus: min %}
+	{% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
+  	{% assign posts = site.posts %}
    	 <li>
-	    {{ post.content }}
+	    {{ posts[randomNumber].content }}
     	</li>
-  	{% endfor %}
 	</ul> 
     
       {% if site.github.is_project_page %}
