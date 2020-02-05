@@ -1,7 +1,3 @@
----
-layout: pages
----
-
 <pre>
   __________________________
 / Yesterday I ate a clock.   \
