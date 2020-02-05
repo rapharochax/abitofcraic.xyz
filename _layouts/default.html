@@ -18,16 +18,12 @@
         <a href="{{ site.url }}"> <h1>{{ site.title | default: site.github.repository_name }}</h1> </a>
         <p>{{ site.description | default: site.github.project_tagline }}</p>
    
-	<ul>
 	{% assign min = 0 %}
 	{% assign max = site.posts | size %}
 	{% assign diff = max | minus: min %}
 	{% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
   	{% assign posts = site.posts %}
-   	 <li>
-	    {{ posts[randomNumber].content }}
-    	</li>
-	</ul> 
+	{{ posts[randomNumber].content }}
     
       {% if site.github.is_project_page %}
       <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
