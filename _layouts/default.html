@@ -19,9 +19,9 @@
         <p>{{ site.description | default: site.github.project_tagline }}</p>
    
 	<ul>
-  	{% for page in site.pages %}
+  	{% for post in site.posts %}
    	 <li>
-	    {{ page.content }}
+	    {{ post.content }}
     	</li>
   	{% endfor %}
 	</ul> 
