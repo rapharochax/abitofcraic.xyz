@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<pre>
+  __________________________
+/ Due to the quarantine...   \
+\ Only inside jokes now.    /
+  ---------------------------
+  \
+ 
+  ^_^ 
+ (oo)\_______  
+ (__)\       )\/\  
+      ||--VV |  
+      ||    || 
+ ^^^^^^^^^^^^^^^^^^
+ sauce: @DadSaysJokes
+</pre>
+
