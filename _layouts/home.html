@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{{ content }}
+
+<object data="snippet.html" width="500" height="200"></object> 
+<script type="text/javascript">
+(function randomPage(min, max) {
+	var num = Math.floor(Math.random() * (max - min +1)) + min;
+	var x = document.createElement("OBJECT");
+  	x.setAttribute("data", "_posts/" + num + ".md");
+  	x.setAttribute("width", "400i");
+  	x.setAttribute("height", "400");
+  	document.body.appendChild(x);
+}(1, {{ site.posts.size }} ));
+</script>
