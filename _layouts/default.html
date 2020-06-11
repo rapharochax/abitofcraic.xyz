@@ -24,16 +24,7 @@
 
       </section>
 
-      <script type="text/javascript">
-        (function randomPage(min, max) {
-          var num = Math.floor(Math.random() * (max - min +1)) + min;
-          var x = document.createElement("OBJECT");
-            x.setAttribute("data", "/assets/" + num + ".html");
-            x.setAttribute("width", "400");
-            x.setAttribute("height", "400");
-            document.getElementById("main").appendChild(x);
-        }(1, {{ site.posts.size }} ));
-      </script>
+
 
       <footer>
         {% if site.github.is_project_page %}
